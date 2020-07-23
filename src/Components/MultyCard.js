@@ -26,10 +26,10 @@ const MultyCard = ({ country, stylesheetClass, inputForm, onClick}) => {
                         <Button onClick={onClick} name="Search" stylesheetClass={["btn-primary"]} />
                     </div>   
                 </div>           
-                <div className="row mx-0 mt-4 row-cols-1 row-cols-md-3">
+                <div className="row mx-0 mt-4 row-cols-1 row-cols-md-4">
 {            country.map((item,i)=> {    return (
                 <div key={i} className="col mb-4">
-                    <div className="card">
+                    <div className="card h-100">
                         <img src={item.flag} className="card-img-top" alt={item.name} />
                         <div className="card-body" style={{backgroundColor: "#d5d6d8"}}>
                             <table className="table table-striped">
